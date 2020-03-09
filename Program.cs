@@ -6,4 +6,9 @@
         {
         }
     }
+	
+	static int Penambhaan(int a, int b)
+	{
+		return a+ b;
+	}
 }
