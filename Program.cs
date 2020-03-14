@@ -11,8 +11,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            //Input Operator
-            Console.Write("Calculator: \n");
+            Console.Write("Peogram Calculator: \n");
             Console.WriteLine();
 
             Console.Write("1. Penjumlahan\n");
@@ -30,7 +29,7 @@ namespace ConsoleApp1
             if (x == 1)
             {
                 Console.Write("Input nilai a = ");
-                int a = int.Parse(Console.ReadLine());
+                int a = Convert.ToInt32(Console.ReadLine());
 
                 Console.Write("Input nilai b = ");
                 int b = Convert.ToInt32(Console.ReadLine());
@@ -42,7 +41,7 @@ namespace ConsoleApp1
             else if (x == 2)
             {
                 Console.Write("Input nilai a = ");
-                int a = int.Parse(Console.ReadLine());
+                int a = Convert.ToInt32(Console.ReadLine());
 
                 Console.Write("Input nilai b = ");
                 int b = Convert.ToInt32(Console.ReadLine());
@@ -54,7 +53,7 @@ namespace ConsoleApp1
             else if (x == 3)
             {
                 Console.Write("Input nilai a = ");
-                int a = int.Parse(Console.ReadLine());
+                int a = Convert.ToInt32(Console.ReadLine());
 
                 Console.Write("Input nilai b = ");
                 int b = Convert.ToInt32(Console.ReadLine());
@@ -66,10 +65,10 @@ namespace ConsoleApp1
             else if (x == 4)
             {
                 Console.Write("Input nilai a = ");
-                int a = int.Parse(Console.ReadLine());
+                Double a = Convert.ToDouble(Console.ReadLine());
 
                 Console.Write("Input nilai b = ");
-                int b = Convert.ToInt32(Console.ReadLine());
+                Double b = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine();
                 Console.WriteLine("Hasil Pembagian: " + a + " / " + b + " = " + Pembagian(a, b));
@@ -77,11 +76,11 @@ namespace ConsoleApp1
 
             else
             {
-                Console.Write("Maaf, menu yang anda pilih tidak tersedia");
+                Console.Write("Maaf, pilihan yang anda pilih tidak tersedia");
             }
 
             Console.WriteLine();
-            Console.WriteLine("\nTekan sembarang ben metu");
+            Console.WriteLine("\nKetik key untuk keluar");
             Console.ReadKey();
         }
 
@@ -100,7 +99,7 @@ namespace ConsoleApp1
             return a * b;
         }
 
-        static int Pembagian(int a, int b)
+        static Double Pembagian(Double a, Double b)
         {
             return a / b;
         }
